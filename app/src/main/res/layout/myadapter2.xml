@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="150dp"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/border_mdp2">
+
+        <ImageView
+            android:id="@+id/mdp2_iv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="@mipmap/sony"
+            />
+
+        <TextView
+            android:id="@+id/mdp2_tv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="这是文字"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:background="@drawable/border_mdp2"
+            android:singleLine="true"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

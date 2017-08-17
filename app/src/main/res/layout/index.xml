@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/colorGreen"
+        >
+
+        <TextView
+            android:id="@+id/top_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="首页"
+            android:textSize="24sp"
+            android:textColor="#fff"
+            android:gravity="center"/>
+
+        <Button
+            android:id="@+id/top_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:background="@mipmap/chuifengji"
+            android:layout_centerVertical="true"
+            android:onClick="oncl1"
+            />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/i_fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/i_vp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadingEdge="none"
+            android:overScrollMode="never">
+
+        </android.support.v4.view.ViewPager>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DFDFDF"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="2dp">
+
+        <LinearLayout
+            android:id="@+id/l_weixin"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/wexiniv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@mipmap/chats_green"/>
+
+            <TextView
+                android:id="@+id/weixintv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="首页"
+                android:textColor="#45c01a"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_txl"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/txliv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@mipmap/contacts"/>
+
+            <TextView
+                android:id="@+id/txltv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="个性推荐"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_faxian"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/faxianiv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@mipmap/discover"/>
+
+            <TextView
+                android:id="@+id/faxiantv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="查询"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/l_me"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/meiv"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:src="@mipmap/about_me"/>
+
+            <TextView
+                android:id="@+id/metv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="我"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

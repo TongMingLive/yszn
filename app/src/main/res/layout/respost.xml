@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#3f51b5"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:text="报表填写"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="#3f51b5"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="#eee"
+        android:layout_margin="20dp"
+        >
+
+        <EditText
+            android:id="@+id/resname"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="请输入物品名称"
+            android:padding="5dp"
+            android:focusableInTouchMode="false"
+            android:singleLine="true"
+            android:background="#fff"
+            android:layout_marginBottom="1dp"
+            android:textCursorDrawable="@null"
+            />
+
+        <EditText
+            android:id="@+id/restime"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:hint="请输入预约维修时间"
+            android:padding="5dp"
+            android:focusableInTouchMode="false"
+            android:singleLine="true"
+            android:background="#fff"
+            android:layout_marginBottom="1dp"
+            android:textCursorDrawable="@null"
+            />
+
+        <EditText
+            android:id="@+id/respage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:hint="物品损坏描述(简述)"
+            android:padding="5dp"
+            android:focusableInTouchMode="false"
+            android:background="#fff"
+            android:layout_marginTop="1dp"
+            android:textCursorDrawable="@null"
+            android:gravity="top"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:background="#3f51b5"
+        >
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.2"
+            android:text="立即报修"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:onClick="login"
+            android:background="#00ccff"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.75"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="不会填写？"
+                android:textColor="#fff"
+                android:gravity="center"
+                android:textSize="20sp"/>
+
+            <Button
+                android:id="@+id/btn_fh"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="返回"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="#3f51b5"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

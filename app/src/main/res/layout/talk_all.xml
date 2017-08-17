@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#3F51B5"
+        >
+
+        <Button
+            android:id="@+id/t_fh"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="返回"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@null"/>
+
+        <TextView
+            android:id="@+id/top_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="马化腾"
+            android:textSize="18sp"
+            android:textColor="#fff"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:src="@mipmap/kefu"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/imageView2" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="11">
+
+        <TextView
+            android:id="@+id/talk_tex_gonggao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:text="这里是公告"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.2"
+        android:orientation="horizontal"
+        android:background="#fff">
+
+        <TextView
+            android:id="@+id/talk_texv_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:text="这里是时间"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
